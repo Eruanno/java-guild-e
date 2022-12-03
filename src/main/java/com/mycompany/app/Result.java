@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-public record Result(int testNumber, int matchingDigits, long time) {
+public record Result(int testNumber, int matchingDigits, long time, int n, int scale) {
     void displayResult() {
         System.out.println("Run #" + testNumber + ":");
         System.out.println("Score:\t" + matchingDigits);
@@ -8,6 +8,6 @@ public record Result(int testNumber, int matchingDigits, long time) {
     }
 
     void displayTableResult() {
-        System.out.println(testNumber + "\t" + matchingDigits + "\t" + time);
+        System.out.println(testNumber + "\t" + n +  "\t" + scale +  "\t" +matchingDigits + "\t" + time);
     }
 }

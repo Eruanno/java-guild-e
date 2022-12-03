@@ -6,6 +6,10 @@ public class SingleTest {
 
     private final int testNumber;
 
+    private int n = 20000;
+
+    private int scale = 100000;
+
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         int testNumber = 1;
@@ -22,8 +26,14 @@ public class SingleTest {
         this.testNumber = testNumber;
     }
 
+    SingleTest(int testNumber, int n, int scale) {
+        this.testNumber = testNumber;
+        this.n = n;
+        this.scale = scale;
+    }
+
     Result run() {
-        ECalculator eCalculator = new ECalculator(100000, 19500, Algorithm.SECOND);
+        ECalculator eCalculator = new ECalculator(n, scale, Algorithm.SEVENTH);
         eCalculator.calculateE();
         return compileResult(eCalculator);
     }
@@ -35,6 +45,6 @@ public class SingleTest {
         do {
             position++;
         } while ((position < calculated.length()) && (ideal.charAt(position) == calculated.charAt(position)));
-        return new Result(this.testNumber, position, eCalculator.getTimeMs());
+        return new Result(this.testNumber, position, eCalculator.getTimeMs(), n, scale);
     }
 }
