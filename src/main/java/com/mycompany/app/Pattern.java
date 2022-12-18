@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class Pattern {
     public static void main(String[] args) {
-        InputStream inputStream = Pattern.class.getResourceAsStream("/pattern-test-input");
-        Scanner inScanner = new Scanner(inputStream);
+        //InputStream inputStream = Pattern.class.getResourceAsStream("/pattern-test-input");
+        Scanner inScanner = new Scanner(System.in);
 
         int noOfImages = 0;
         if (inScanner.hasNextLine()) {
