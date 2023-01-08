@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jlabs.guild.eruanno.pilot.e;
 
 import java.util.List;
 import java.util.Scanner;

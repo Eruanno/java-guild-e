@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jlabs.guild.eruanno.pilot.e;
 
 /*
  * Approximating Euler's number correctly (Java)

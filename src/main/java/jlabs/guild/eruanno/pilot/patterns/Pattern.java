@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jlabs.guild.eruanno.pilot.patterns;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class Pattern {
     public static void main(String[] args) {
-        //InputStream inputStream = Pattern.class.getResourceAsStream("/pattern-test-input");
-        Scanner inScanner = new Scanner(System.in);
+        InputStream inputStream = Pattern.class.getResourceAsStream("/pattern-x");
+        Scanner inScanner = new Scanner(inputStream);
 
         int noOfImages = 0;
         if (inScanner.hasNextLine()) {

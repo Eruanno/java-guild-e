@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jlabs.guild.eruanno.pilot.e;
 
 public record Result(int testNumber, int matchingDigits, long time, int n, int scale) {
     void displayResult() {

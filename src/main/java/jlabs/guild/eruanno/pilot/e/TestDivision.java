@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jlabs.guild.eruanno.pilot.e;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
